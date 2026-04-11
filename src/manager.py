@@ -1,5 +1,3 @@
-# src/manager.py
-
 import json
 import os
 from task import Task
