@@ -1,22 +1,20 @@
-# src/manager.py
-
 import json
 import os
-from task import Task
+from src.task import Task
 
-ARQUIVO = "tasks.json"
 
 class TaskManager:
-    def __init__(self):
+    def __init__(self, arquivo="tasks.json"):
+        self.arquivo = arquivo
         self.tasks = []
         self.next_id = 1
         self.carregar()
 
     def carregar(self):
-        if not os.path.exists(ARQUIVO):
+        if not os.path.exists(self.arquivo):
             return
 
-        with open(ARQUIVO, "r") as f:
+        with open(self.arquivo, "r") as f:
             dados = json.load(f)
             for item in dados:
                 tarefa = Task(**item)
@@ -26,7 +24,7 @@ class TaskManager:
                 self.next_id = max(t.id for t in self.tasks) + 1
 
     def salvar(self):
-        with open(ARQUIVO, "w") as f:
+        with open(self.arquivo, "w") as f:
             json.dump([t.__dict__ for t in self.tasks], f, indent=4)
 
     def adicionar_tarefa(self, descricao, horario):
