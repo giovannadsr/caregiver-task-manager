@@ -6,7 +6,6 @@ O **Caregiver Task Manager** é uma aplicação em linha de comando (CLI) desenv
 
 O sistema foi criado com foco em simplicidade, praticidade e redução da sobrecarga mental enfrentada por cuidadores.
 
----
 
 ## Problema
 
@@ -17,13 +16,11 @@ Cuidadores frequentemente lidam com múltiplas responsabilidades simultâneas, o
 * sobrecarga mental
 * falhas no acompanhamento de atividades críticas
 
----
 
 ## Solução
 
 A aplicação permite registrar e acompanhar tarefas de forma simples, garantindo maior controle sobre a rotina.
 
----
 
 ## Público-alvo
 
@@ -31,7 +28,6 @@ A aplicação permite registrar e acompanhar tarefas de forma simples, garantind
 * profissionais da área de saúde
 * pessoas responsáveis por idosos ou pacientes
 
----
 
 ## Funcionalidades
 
@@ -40,7 +36,6 @@ A aplicação permite registrar e acompanhar tarefas de forma simples, garantind
 * Marcar tarefa como concluída
 * Persistência de dados em arquivo JSON
 
----
 
 ## Tecnologias utilizadas
 
@@ -48,7 +43,6 @@ A aplicação permite registrar e acompanhar tarefas de forma simples, garantind
 * JSON (armazenamento de dados)
 * pytest (testes automatizados)
 
----
 
 ## Instalação
 
@@ -64,8 +58,6 @@ Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ## Como executar
 
@@ -87,15 +79,12 @@ python src/main.py listar
 python src/main.py concluir 1
 ```
 
----
-
 ## Testes
 
 ```bash
 pytest
 ```
 
----
 
 ## Estrutura do Projeto
 
@@ -114,7 +103,6 @@ caregiver-task-manager/
 ├── VERSION
 ```
 
----
 
 ## Versionamento
 
@@ -126,16 +114,13 @@ Este projeto segue o padrão de versionamento semântico:
 * MINOR: novas funcionalidades
 * PATCH: correções
 
----
 
 ## Autora
 
 Giovanna Rodrigues
 
----
 
-## 🔗 Repositório
+## Repositório
 
 https://github.com/giovannadsr/caregiver-task-manager
 
----
