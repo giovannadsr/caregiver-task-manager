@@ -43,6 +43,9 @@ A aplicação permite registrar e acompanhar tarefas de forma simples, garantind
 * JSON (armazenamento de dados)
 * pytest (testes automatizados)
 
+## Integração com API
+
+O sistema possui integração com a API pública Open-Meteo para consulta de informações climáticas relevantes ao cuidador.
 
 ## Instalação
 
@@ -84,7 +87,11 @@ python src/main.py concluir 1
 ```bash
 pytest
 ```
+### Consultar clima atual
 
+```bash
+python src/main.py clima
+```
 
 ## Estrutura do Projeto
 
@@ -123,4 +130,5 @@ Giovanna Rodrigues
 ## Repositório
 
 https://github.com/giovannadsr/caregiver-task-manager
+
 
