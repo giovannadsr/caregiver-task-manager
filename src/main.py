@@ -1,5 +1,6 @@
 import sys
-from manager import TaskManager
+from src.manager import TaskManager
+from src.weather import obter_clima
 
 manager = TaskManager()
 
@@ -21,5 +22,9 @@ elif comando == "concluir":
     task_id = int(sys.argv[2])
     manager.concluir_tarefa(task_id)
 
+elif comando == "clima":
+    print(obter_clima())
+
 else:
     print("Comando inválido")
+

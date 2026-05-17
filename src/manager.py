@@ -49,5 +49,4 @@ class TaskManager:
                 self.salvar()
                 print("Tarefa concluída!")
                 return
-        
         print("Tarefa não encontrada.")
